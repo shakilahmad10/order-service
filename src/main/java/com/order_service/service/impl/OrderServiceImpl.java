@@ -8,7 +8,6 @@ import com.order_service.entity.OrderItem;
 import com.order_service.entity.OrderStatus;
 import com.order_service.repository.OrderRepository;
 import com.order_service.service.OrderService;
-import com.order_service.service.ProductClient;
 import com.order_service.service.helper.ProductServiceHelper;
 import com.order_service.kafka.event.OrderPlacedEvent;
 import com.order_service.kafka.producer.OrderProducer;
@@ -28,7 +27,6 @@ public class OrderServiceImpl implements OrderService {
 
     private OrderRepository orderRepository;
     private ModelMapper modelMapper;
-    private ProductClient productClient;
     private final ProductServiceHelper productServiceHelper;
     private final OrderProducer orderProducer;
 

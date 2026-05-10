@@ -1,6 +1,5 @@
 package com.order_service.dto;
 
-import com.order_service.entity.OrderItem;
 import com.order_service.entity.OrderStatus;
 import lombok.Data;
 
